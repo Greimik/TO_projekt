@@ -1,15 +1,15 @@
 Autor: Marcin Labuda
 Adres e-mail: marcin.labuda6@gmail.com
 Nr grupy dziekańskiej: 1IZ21A
-Temat projektu: Porównanie rozwiązań związanych z testowaniem jednostkowym aplikacji JAVA
+Temat projektu: Porównanie rozwiązań związanych z testowaniem aplikacji JAVA
 Harmonogram projektu:
     1. Przygotowanie repozytorium oraz harmonogramu projektu 
-    2. Opisać zgadadnienie testowania oprogramowania z wyszególnieniem testowania jednostrkowego
+    2. Opisać zgadadnienie testowania oprogramowania
     3. Opisanie możliwości frameworku Mockito oraz JUnit
     4. Napisanie prostej aplikacji JAVA pozwalającej na testowanie jednostrkowego
     5. Rozpisanie scenariuszy testowych
     6. Napisanie testów jednostkowych za pomocą frameworku Mockito i JUnit
-    7. Porównanie wyników testów jednostkowych
+    7. Opracowanie wyników testów oraz spisanie wniosków
     8. Oddanie pracy
 Technologie uzywane w projekcie: JAVA, Mockito, JUnit
 Temat projektu z przedmiotu "Programowanie systemów rozporszonych": Technologia PVM
