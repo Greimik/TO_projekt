@@ -5,4 +5,4 @@ Porównanie rozwiązań związanych z testowaniem
 
 
 ## Autorzy
-Marcin Labuda Grupe 1IZ21A
+Marcin Labuda Grupa 1IZ21A
