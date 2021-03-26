@@ -1,0 +1,7 @@
+Autor: Marcin Labuda
+Adres e-mail: marcin.labuda6@gmail.com
+Nr grupy dziekańskiej: 1IZ21A
+Temat projektu: Porównanie rozwiązań związanych z testowaniem
+Technologie uzywane w projekcie: JAVA, Mockito, PowerMockito, EasyMock, Selenium
+Temat projektu z przedmiotu "Programowanie systemów rozporszonych": Technologia PVM
+Temat pracy inzynierskiej: System do zarządzania oraz analizy kontenerów Dockera
