@@ -1,0 +1,16 @@
+Autor: Marcin Labuda
+Adres e-mail: marcin.labuda6@gmail.com
+Nr grupy dziekańskiej: 1IZ21A
+Temat projektu: Porównanie rozwiązań związanych z testowaniem aplikacji JAVA
+Harmonogram projektu:
+    1. Przygotowanie repozytorium oraz harmonogramu projektu 
+    2. Opisać zgadadnienie testowania oprogramowania
+    3. Opisanie możliwości frameworku Junit oraz TestNG
+    4. Opisanie możliwości frameworku Mockito oraz PowerMock
+    5. Napisanie prostej aplikacji JAVA pozwalającej na testowanie jednostrkowego
+    6. Napisanie testów jednostkowych za pomocą frameworkó: JUnit, TestNG, Mockito oraz PowerMock
+    7. Opracowanie wyników testów oraz spisanie wniosków
+    8. Oddanie pracy
+Technologie uzywane w projekcie: JAVA, JUnit, TestNG, Mockito, PowerMock
+Temat projektu z przedmiotu "Programowanie systemów rozporszonych": Technologia PVM
+Temat pracy inzynierskiej: System do zarządzania oraz analizy kontenerów Dockera
