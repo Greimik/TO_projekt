@@ -65,6 +65,58 @@ Takie testy odpowiadają na pytanie czy system nadaje się do uzytku czy może j
 W takiej sytuacji metryki testowania przestają mieć znaczenie, ponieważ dla uzytkownika ten system jest bezużyteczny.
 
 
+## Poziomy testów
+
+Testowanie zawsze odbywa się w określonym cyklu zycia oprogramowania. Wymienione poniżej typy testów odnoszą się do faz wytwarzania oprogramowania. 
+Nalezy pamiętąc że poziomy testów mogą różnić się w zależności od projektu i specyfiki danego systemu. 
+Te które opisałem są najbardziej typowymi i można je znaleźć na większości projektów.
+
+### Testowanie jednostkowe
+
+Testowanie jednostkowe (testy modułowe) opiera się na testowaniu możliwie najmniejszej jednostce systemu (moduł, kalsa, funkcja), którą można testować w izolacji od innych jednostek. 
+Ze względu na fakt że głównie testy jednostkowe piszą programiści (z wykorzystaniem narzedzi takich jak np. JUnit) mogą one być nie do końca miarodajne co może wynikać np. ze stosunku programisty do napisanego kodu. 
+Tester nie posiada takiej relacji więc jego testy mogą być bardziej wiarygodne. 
+Testy modułowe idealnie nadają się do stosowania w podejściu Test Driven development (TDD). 
+Testowanie jednostkowe jest wykonywane bez stosowania formalnego procesu zarządzania usterkami. 
+Podczas wykonywania testów jednostkowych wykorzystuje się odpowiednie środowisko, w którym moduł może być przetestowany w izolacji od pozostałych cześci systemu. 
+Środowiska takie umożliwiają również automatyczne wykonywanie testów (lub ich zestawów) i w graficzny sposób pokazuje odsetek zdanych testów oraz stopień pokrycia kodu.
+
+### Testowanie integracyjne
+
+Testowanie integracyjne to testowanie wykonywane w celu wykrycia defektów podczas interakcji między komponentami lub systemami. 
+Jest to niejako przeniesienie testowania na wyższy poziom abstrakcji systemu. 
+W takim testowaniu nie koniecznie muszą być testowane integracje z innnymi (zewnętrznymi) systemami ale również integracja z innym modułem lub nawet metodą. 
+W takiej zależności możemy mówić o testach małej lub dużej skali  integracji. 
+Integracja małej skali dotyczy łączenia ze sobą "małych" elementów oprogramowania jak metody czy klasy. Integracja dużej skali polega na łączeniu ze sobą większych elementów, takich jak całe programy lub systemu. 
+Podstawą do testów integracyjnych jest projekt architektury systemu oraz opis przepływu procesów. 
+W przypadku dużej integracji podstawą testów mogą być także przypadki użycia. 
+Waznym elementem tego typu testowania jest również konfiguracja. Konfiguracja różnych ustawień systemowych może mieć wpływ na działanie wszystkich modułów wchodzących w skłąd aplikacji. 
+Podczas testowania integracyjnego testerzy powinni skupiac się wyłącznie na aspekcie współdziałania testowanych komponentów, np. na testowaniu interfejsu. 
+Na tym etapie testowania nie interesuje nas poprawnośc funkcjonalności każdego z modułów z osobna.
+
+### Testowanie systemowe
+
+Testowanie systemowe rozpoczyna się wtedy kiedy poszczególne elementy danego systemu zostały już ze sobą zintegrowane w spójny działający system. 
+Jest to jeszcze wyższy poziom testowania niż testowanie integracyjne, pozwaljące na sprawdzenie wysokopoziomej funkcjonalności systemu od momentu zalogowania sie do niego po zakończenie pracy (nazywane też testami end-to-end). 
+Zadaniem testowania systemowego jest porownanie stworzonego programu/systemu z jego pierwotnymi celami projektowymi (wymaganiami biznesowymi). 
+Podstawe w takich testach stanowią więc wymagania systemowe, przypadki użycia, specyfikacja funkcjonalna oraz specyfikacja procesów biznesowych realizowanych przez system. 
+Obiektami testowanymi są wówczas: sam sytem, podręczniki systemowe, dokumentacja użytkowa a także konfiguracja systemu. 
+Należy pamiętać że testy systemowe powinny być przeprowadzane na środowisku bliżniaczym do środowiska produkcyjnego.
+
+### Testowanie akceptacyjne
+
+Testowanie akceptacyjne jest wykonywane w momecie kiedy system jest już gotowy. 
+Wykonują te testy klienci/użytkownicy zaintalowanego programu. 
+Głównym celem testowania akceptacyjnego nie jest znajdywanie usterek (chodź same usterki mogą się na tym etapie pojawić). 
+Wiekszość z nich powinna zostać wykryta na wczesniejszych etapach.
+Testowanie akceptacyjne powinno służyć przedewszystkim do nabrania zaufania do systemu lub jego atrybutów niefunkcjonalnych. 
+Jest to forma walidacji, czyli potwierdzenia że produkt spełnia oczekiwania klienta. 
+Ocenie podelgają wówczas zaróno aspekty funkcjonalne (co system robi) jak i niefunkcjonalne (jak system pracuje). 
+Wyniki takich testów mogą mieć formę kwestionariuszy bądź ankiet. 
+Nalezy jednak pamiętać że to użytkownicy systemu przeprowadzające ten rodzaj testów, przez co mogą niewiedzieć jak zgłosić napotkany defekt. 
+W takiej sytuacji warto jest rozważyć zastosowanie odpowiedniej techniki do rejestracji błędu lub np. nagrywać akcje wykonywane przez uzytkownika. 
+Dzięki takim technikom programiści łatwiej zreprodukują błąd i w konsekwencji naprawią go. 
+Drugą rzeczą wartą wspomnienia jest koszt naprawy defektu wykrytego na tym etapie testowania, bowiem jest on znacznie większy niż na wcześniejszych poziomach testowania.
 
 ## Przypisy
 
